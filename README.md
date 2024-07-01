@@ -6,3 +6,4 @@
 
 2024-07-01 ~ 2024-10-31 포트폴리오 리뉴얼
 - 브랜치 feature/renewal-NextJS
+- python fastapi + NextJS
