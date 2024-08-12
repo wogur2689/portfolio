@@ -3,6 +3,9 @@ body {
     margin: 0;
     background-color: #000000;
 }
+a {
+    text-decoration: none;
+}
 header {
     width: 100%;
     height: 100px;
@@ -16,7 +19,6 @@ header #menu a {
     margin-right: 60px;
     font-size: 24px;
     font-weight: 700;
-    text-decoration: none;
     color: #ffffff;
 }
 header #menu a:hover {
@@ -98,4 +100,37 @@ header #menu a:hover {
 #codingSkill .skill .title {
     font-size: 20px;
     color: #ffffff;
+}
+#projects {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column
+}
+#projects .project_list {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#projects .project_list .project {
+    width: 400px;
+    height: 450px;
+    color: #fff;
+}
+#projects .project_list .project img {
+    width: 100%;
+    height: 400px;
+}
+#projects .project_list .project span a {
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+#projects .project_bar {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #12a7e7;
+    color: #fff;
 }
