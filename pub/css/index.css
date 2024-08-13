@@ -119,4 +119,16 @@ header #menu a:hover {
 #career {
     height: 500px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#career #study {
+    display: flex;
+    justify-content:space-around;
+}
+#career #study #school {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
