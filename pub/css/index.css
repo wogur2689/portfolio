@@ -1,9 +1,14 @@
 @charset "UTF-8";
 body {
     margin: 0;
+    padding: 0;
     background-color: #000000;
 }
+section {
+    width: 100%;
+}
 a {
+    color:black;
     text-decoration: none;
 }
 header {
@@ -25,18 +30,15 @@ header #menu a:hover {
     color: green;
 }
 #home {
-    width: 100%;
     height: 600px;
     display: flex;
     justify-content: center;
     align-content: center;
 }
-#home #me {
+#home #me img {
     width: 400px;
     height: 400px;
     margin-top: 50px;
-    margin-right: 50px;
-    border-radius: 200px;
 }
 #home #profile {
     height: 400px;
@@ -44,6 +46,12 @@ header #menu a:hover {
     margin-left: 50px;
     padding: 30px;
     color:#fff;
+}
+#home #profile #aboutMe, #channel {
+    opacity: 70%;
+} 
+#home #profile a {
+    color: #fff;
 }
 #home #contact {
     display: flex;
@@ -60,49 +68,23 @@ header #menu a:hover {
 }
 
 #Skills {
-    width: 100%;
     height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     background-color: #494949;
 }
-#Skills .it {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-#Skills .it .it_item {
-    display: inline-block;
-    padding: 50px;
-    width: 100px;
-    height: 100px;
-    margin-left: 35px;
-    margin-right: 35px;
+#Skills .it_item {
     color:#fff;
 }
 #codingSkill {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-#codingSkill .skillset {
-    display: inline-block;
-    padding: 50px;
-    width: 100px;
-    height: 100px;
-    margin-left: 35px;
-    margin-right: 35px;
-}
-#codingSkill .skill {
-    display: block;
-    margin-bottom: 20px;
-}
-#codingSkill .skill .title {
-    font-size: 20px;
-    color: #ffffff;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 #projects {
-    width: 100%;
     height: 650px;
     display: flex;
     flex-direction: column
@@ -132,5 +114,9 @@ header #menu a:hover {
     width: 100%;
     height: 50px;
     border: 1px solid #12a7e7;
+    color: #fff;
+}
+#career {
+    height: 500px;
     color: #fff;
 }
