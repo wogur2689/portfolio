@@ -1,0 +1,168 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+section {
+    width: 100%;
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+header #menu {
+    float: right;
+}
+header #menu a {
+    height: 100%;
+    margin-right: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+header #menu a:hover {
+    color: green;
+}
+#home {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#home #me img {
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+}
+#home #profile {
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 30px;
+    color:#fff;
+}
+#home #profile #aboutMe, #channel {
+    opacity: 70%;
+} 
+#home #profile a {
+    color: #fff;
+}
+#home #contact {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#home #contact #aboutMe {
+    width: 100%;
+    color: #fff;
+}
+#home #contact #channel {
+    width: 100%;
+    color: #fff;
+}
+
+#Skills {
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #494949;
+}
+#Skills .it_item {
+    color:#fff;
+}
+#codingSkill {
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#projects {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+#projects .project_list {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: auto;
+    overflow-x: scroll; /* 가로 스크롤 활성화 */
+}
+/* 스크롤바 전체 */
+#projects .project_list::-webkit-scrollbar {
+    height: 10px; /* 스크롤바 높이 (가로 스크롤바일 때) */
+}
+
+/* 스크롤바 트랙 */
+#projects .project_list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* 스크롤바 핸들 */
+#projects .project_list::-webkit-scrollbar-thumb {
+    background-color: #12a7e7; /* 스크롤바 색상 */
+    border: 2px solid #12a7e7; /* 테두리 색상 */
+}
+
+/* 스크롤바 핸들 (hover 시) */
+#projects .project_list::-webkit-scrollbar-thumb:hover {
+    background-color: #7d12e7;
+    border: 2px solid #7d12e7;
+}
+#projects .project_list .project {
+    width: 400px;
+    height: 450px;
+    color: #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#projects .project_list .project img {
+    width: 400px;
+    height: 400px;
+}
+#projects .project_list .project span a {
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+#career {
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#career #school {
+    width: 400px;
+    text-align: left;
+}
+#career #certificate {
+    width: 400px;
+    text-align: left;
+}
+#career #company {
+    width: 100%;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+}
+#career .career_title {
+    
+}
+#career .career_content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
