@@ -1,26 +1,6 @@
 export default function Home() {
   return (
     <>
-      <html lang="ko">
-      <head>
-          {/* meta */}
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-          {/* font */}
-          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          
-          {/* css */}
-          <link rel="stylesheet" href="./css/index.css">
-
-          {/* js */}
-          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-          <script src="./js/index.js"></script>
-          <title>Document</title>
-      </head>
       <body>
           <header> <!--브랜드 / 사용자들을 위한 메뉴-->
               <nav id="menu"> <!-- 여러가지 메뉴들이 모인 네비게이션-->
@@ -181,8 +161,6 @@ export default function Home() {
           </main>
           <footer>
           </footer>
-      </body>
-      </html>
     </>
   );
 }
