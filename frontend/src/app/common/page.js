@@ -34,6 +34,28 @@ const MetaHead = ({title}) => {
     );
 }
 
+const Header = () => {
+    return (
+        <header>
+            <nav id="menu">
+                <a href="#">Home</a>
+                <a href="#">Skills</a>
+                <a href="#">Project</a>
+                <a href="#">Career</a>
+            </nav>
+        </header>
+    );
+}
+
+const Footer = () => {
+    return (
+        <footer>
+        </footer>
+    );
+}
+
 export {
-    MetaHead
+    MetaHead,
+    Header,
+    Footer
 }
