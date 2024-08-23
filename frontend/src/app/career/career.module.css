@@ -1,0 +1,30 @@
+#career {
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#career #school {
+    width: 400px;
+    text-align: left;
+}
+#career #certificate {
+    width: 400px;
+    text-align: left;
+}
+#career #company {
+    width: 100%;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+}
+#career .career_title {
+    
+}
+#career .career_content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,37 @@
+#home {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#home #me img {
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+}
+#home #profile {
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 30px;
+    color:#fff;
+}
+#home #profile #aboutMe, #channel {
+    opacity: 70%;
+} 
+#home #profile a {
+    color: #fff;
+}
+#home #contact {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#home #contact #aboutMe {
+    width: 100%;
+    color: #fff;
+}
+#home #contact #channel {
+    width: 100%;
+    color: #fff;
+}

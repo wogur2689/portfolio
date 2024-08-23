@@ -1,3 +1,4 @@
+import styles from './common.module.css';
 import Head from "next/head";
 
 const MetaHead = ({title}) => {
