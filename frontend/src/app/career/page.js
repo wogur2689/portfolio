@@ -1,11 +1,13 @@
-export default function Page() {
+import styles from './career.module.css';
+
+export default function Career() {
     return (
-        <section id="career">
-            <div id="school">
-            <div class="career_title">
+        <section className={styles.career}>
+            <div className={styles.school}>
+            <div className={styles.career_title}>
                 <h2>School</h2>
             </div>
-            <div class="career_content">
+            <div className={styles.career_content}>
                 <img src="./img/School1.png" alt="학점은행제"/>
                 <p>
                     학점은행제(편입)<br/>
@@ -13,7 +15,7 @@ export default function Page() {
                     컴퓨터공학 학사졸업
                 </p>
             </div>
-            <div class="career_content">
+            <div className={styles.career_content}>
                 <img src="./img/School2.png" alt="동양미래대학교"/>
                 <p>
                     동양미래대학교<br/>
@@ -22,7 +24,7 @@ export default function Page() {
                 </p>
             </div>
             </div>
-            <div id="certificate">
+            <div className={styles.certificate}>
                 <h2>Certificate</h2>
                 <img src="./img/Qnet.png" alt="큐넷"/>
                 <p>
@@ -30,7 +32,7 @@ export default function Page() {
                     2023.09
                 </p>
             </div>
-            <div id="company">
+            <div className={styles.company}>
                 <h2>Company</h2>
                 <img src="./img/company1.png" alt="크림솔루션"/>
                 <p>

@@ -1,10 +1,12 @@
+"use client"
+
 import styles from './common.module.css';
 import Head from "next/head";
 
-const MetaHead = ({title}) => {
+const MetaHead = () => {
     return (
         <Head>
-            <title>{title}</title>
+            <title>포트폴리오</title>
             {/* meta */}
             <meta charset="UTF-8"/>
             <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -14,7 +16,7 @@ const MetaHead = ({title}) => {
                 name="hyeok's portfolio"
                 content="개발자 길재혁의 포트폴리오입니다."
             />
-            <meta property="og:title" content={title} />
+            <meta property="og:title" content="포트폴리오" />
             <meta property="og:type" content="website" />
             {/* <meta property="og:url" content={url || "https://nuguna-nuri.vercel.app"} /> */}
             {/* <meta property="og:image" content={image} /> */}
@@ -37,7 +39,7 @@ const MetaHead = ({title}) => {
 
 const Header = () => {
     return (
-        <header>
+        <header id="header">
             <nav id="menu">
                 <a href="#">Home</a>
                 <a href="#">Skills</a>

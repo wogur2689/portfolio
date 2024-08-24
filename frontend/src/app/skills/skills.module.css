@@ -1,15 +1,15 @@
-#Skills {
+.Skills {
     height: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #494949;
+    background-color: .494949;
 }
-#Skills .it_item {
+.Skills .it_item {
     color:#fff;
 }
-#codingSkill {
+.codingSkill {
     height: 800px;
     display: flex;
     flex-direction: row;

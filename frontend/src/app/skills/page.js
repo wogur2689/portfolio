@@ -1,44 +1,46 @@
-export default function Page() {
+import styles from './skills.module.css';
+
+export default function Skills() {
     return <>
-        <section id="Skills">
-            <div class="it_item">BackEnd</div>
-            <div class="it_item">DataBase</div>
-            <div class="it_item">FrontEnd</div>
-            <div class="it_item">Deployment</div>
-            <div class="it_item">Mobile</div>
+        <section className={styles.Skills}>
+            <div className={styles.it_item}>BackEnd</div>
+            <div className={styles.it_item}>DataBase</div>
+            <div className={styles.it_item}>FrontEnd</div>
+            <div className={styles.it_item}>Deployment</div>
+            <div className={styles.it_item}>Mobile</div>
         </section>
-        <section id="codingSkill">
-            <div class="skillset">
-                <div class="skill">
+        <section className={styles.codingSkill}>
+            <div className={styles.skillset}>
+                <div className={styles.skill}>
                     <img src="./img/Spring.png" alt="Spring" />
                 </div>
-                <div class="skill">
+                <div className={styles.skill}>
                     <img src="./img/Node.png" alt="Nodejs" />
                 </div>
             </div>
-            <div class="skillset">
-                <div class="skill">
+            <div className={styles.skillset}>
+                <div className={styles.skill}>
                     <img src="./img/Oracle.png" alt="Oracle" />
                 </div>
-                <div class="skill">
+                <div className={styles.skill}>
                     <img src="./img/MySQL.png" alt="MySQL" />
                 </div>
-                <div class="skill">
+                <div className={styles.skill}>
                     <img src="./img/PostgreSQL.png" alt="postgreSQL" />
                 </div>
             </div>
-            <div class="skillset">
-                <div class="skill">
+            <div className={styles.skillset}>
+                <div className={styles.skill}>
                     <img src="./img/FrontEnd.png" alt="react" />
                 </div>
             </div>
-            <div class="skillset">
-                <div class="skill">
+            <div className={styles.skillset}>
+                <div className={styles.skill}>
                     <img src="./img/AWS.png" alt="aws" />
                 </div>
             </div>
-            <div class="skillset">
-                <div class="skill">
+            <div className={styles.skillset}>
+                <div className={styles.skill}>
                     <img src="./img/Mobile.png" alt="android" />
                 </div>
             </div>
