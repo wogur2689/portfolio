@@ -1,5 +1,3 @@
-"use client"
-
 import styles from './common.module.css';
 import Head from "next/head";
 
@@ -23,16 +21,16 @@ const MetaHead = () => {
             <meta property="og:article:author" content="wogur2689" />
 
             {/* font */}
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+            {/* <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
             
             {/* css */}
-            <link rel="stylesheet" href="./css/index.css"/>
+            {/* <link rel="stylesheet" href="./css/index.css"/> */}
 
             {/* js */}
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="./js/index.js"></script>
+            {/* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="./js/index.js"></script> */}
         </Head>
     );
 }
