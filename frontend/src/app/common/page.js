@@ -1,7 +1,7 @@
 import styles from './common.module.css';
 import Head from "next/head";
 
-const MetaHead = () => {
+function MetaHead() {
     return (
         <Head>
             <title>포트폴리오</title>
@@ -35,20 +35,20 @@ const MetaHead = () => {
     );
 }
 
-const Header = () => {
+function Header() {
     return (
-        <header id="header">
-            <nav id="menu">
-                <a href="#">Home</a>
-                <a href="#">Skills</a>
-                <a href="#">Project</a>
-                <a href="#">Career</a>
+        <header className={styles.header}>
+            <nav className={styles.menu}>
+                <a href="#" className={styles.a}>Home</a>
+                <a href="#" className={styles.a}>Skills</a>
+                <a href="#" className={styles.a}>Project</a>
+                <a href="#" className={styles.a}>Career</a>
             </nav>
         </header>
     );
 }
 
-const Footer = () => {
+function Footer() {
     return (
         <footer>
         </footer>

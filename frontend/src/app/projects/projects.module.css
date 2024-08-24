@@ -50,3 +50,10 @@
     text-align: center;
     display: block;
 }
+.section {
+    width: 100%;
+}
+.a {
+    color:black;
+    text-decoration: none;
+}
