@@ -5,7 +5,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+#dev
 npm run dev
+
+#deploy
+npm run deploy
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
