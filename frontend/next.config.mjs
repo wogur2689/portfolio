@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: '/portfoilo',
-    assetPrefix: '/portfoilo',
+    basePath: '/portfoilo/frontend',
+    assetPrefix: '/portfoilo/frontend',
     output: 'export',
     // trailingSlash: true, // 경로 뒤에 슬래시를 추가하여 파일 탐색 가능하게 설정
     // images: {
