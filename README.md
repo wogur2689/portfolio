@@ -4,20 +4,18 @@
 
 어떤 언어를 다루는지에 대한 설명과 프로젝트가 담겨있습니다.
 
-## front-end(Next.js)
+## Next.js 14
 ```bash
+# local(dev)
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# deploy(prod)
+npm run build
+npm run deploy
+
 # json-server 실행 명령어
 npx json-server@0.17.4 --port 9999 --watch db.json
 ```
-
-## back-end(미정) 
 
 ## pub(퍼블리싱)
 ```html
