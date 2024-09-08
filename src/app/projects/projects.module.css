@@ -1,10 +1,14 @@
 .projects {
+    width: 100%;
     height: 650px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border-top: #7d12e7 0.1px solid;
+    border-bottom: #7d12e7 0.1px solid;
 }
 .projects .project_list {
-    width: 100%;
+    width: 90%;
     height: 600px;
     display: flex;
     align-items: center;
@@ -15,6 +19,7 @@
 }
 /* 스크롤바 전체 */
 .projects .project_list::-webkit-scrollbar {
+    width: 500px;
     height: 10px; /* 스크롤바 높이 (가로 스크롤바일 때) */
 }
 
@@ -25,8 +30,8 @@
 
 /* 스크롤바 핸들 */
 .projects .project_list::-webkit-scrollbar-thumb {
-    background-color: #12a7e7; /* 스크롤바 색상 */
-    border: 2px solid #12a7e7; /* 테두리 색상 */
+    background-color: #0e0322; /* 스크롤바 색상 */
+    border: 2px solid #0e0322; /* 테두리 색상 */
 }
 
 /* 스크롤바 핸들 (hover 시) */

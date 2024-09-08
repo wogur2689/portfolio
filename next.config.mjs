@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
+    // dev 빌드시 basePath, assetPrefix 주석 처리
     basePath: '/portfolio',
     assetPrefix: '/portfolio',
     trailingSlash: true, // 경로 뒤에 슬래시를 추가하여 파일 탐색 가능하게 설정
