@@ -25,5 +25,7 @@ npx json-server@0.17.4 --port 9999 --watch db.json
 
 ## 개발계획
 - 1차 : 전체적인 부분 개발 (2024-09-09 완료)
-- 2차 : club추가, Career flex -> grid로 전환 (2024-09-20 까지 디자인 및 개발)
+- 2차 : 
+    - club추가, Career flex -> grid로 전환 (2024-09-20 까지 디자인 및 개발)
+    - Skills : JQuery,  (2024-09-20 까지 디자인 및 개발)
 - 3차 : project 상세 기술 페이지 추가 (2024-09-30 까지 디자인 및 개발)
