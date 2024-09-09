@@ -2,6 +2,7 @@ import styles from './skills.module.css';
 
 export default function Skills() {
     return <>
+        <h1 className={styles.ht}>Skills</h1>
         <section className={styles.Skills}>
             <div className={styles.it_item}>BackEnd</div>
             <div className={styles.it_item}>DataBase</div>
