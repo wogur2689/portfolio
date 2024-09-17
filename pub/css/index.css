@@ -142,25 +142,24 @@ header #menu a:hover {
     display: block;
 }
 #career {
-    height: 500px;
+    height: 1500px;
     color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 500px 500px;
 }
 #career #school {
     width: 400px;
-    text-align: left;
 }
 #career #certificate {
     width: 400px;
-    text-align: left;
 }
 #career #company {
-    width: 100%;
-    margin-left: 200px;
-    margin-right: 200px;
-    text-align: left;
+    width: 400px;
+}
+#career #club {
+    width: 400px;
 }
 #career .career_title {
     
