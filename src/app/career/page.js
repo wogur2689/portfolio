@@ -44,7 +44,7 @@ export default function Career() {
                     </p>
                 </div>
                 <div className={styles.club}>
-                    <h2>Company</h2>
+                    <h2>Club</h2>
                     <img src="./img/project/DMCSite.png" alt="MonthlyCoding" width="300px" height="150px"/>
                     <p>
                         MonthlyCoding<br/>
