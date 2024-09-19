@@ -43,6 +43,15 @@ export default function Career() {
                         개발본부 웹개발자 대리
                     </p>
                 </div>
+                <div className={styles.club}>
+                    <h2>Company</h2>
+                    <img src="./img/project/DMCSite.png" alt="MonthlyCoding" width="300px" height="150px"/>
+                    <p>
+                        MonthlyCoding<br/>
+                        2021.09 ~ 2023.10<br/>
+                        코딩 동아리
+                    </p>
+                </div>
             </section>
         </>
     );
