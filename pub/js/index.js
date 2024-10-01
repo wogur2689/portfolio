@@ -6,3 +6,11 @@ $(document).ready(function() {
         skill.find('.inner-bar').animate({width: percentage},1500)
     });
 });
+
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
