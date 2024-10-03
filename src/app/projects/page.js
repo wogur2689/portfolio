@@ -4,8 +4,11 @@ import styles from './projects.module.css';
 const data = () => {
     return [ 
         {'id' : 1, 'title' : 'Music Web', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
-        {'id' : 2, 'title' : 'Music Web', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
-        {'id' : 3, 'title' : 'Music Web', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
+        {'id' : 2, 'title' : 'plant app', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
+        {'id' : 3, 'title' : 'chatting', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
+        {'id' : 4, 'title' : 'DMC App', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
+        {'id' : 5, 'title' : 'DMC Site', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
+        {'id' : 6, 'title' : 'dadok dadok', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
     ]
 }
 
