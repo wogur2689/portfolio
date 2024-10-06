@@ -4,11 +4,11 @@ import styles from './projects.module.css';
 const data = () => {
     return [ 
         {'id' : 1, 'title' : 'Music Web', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
-        {'id' : 2, 'title' : 'plant app', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
-        {'id' : 3, 'title' : 'chatting', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
-        {'id' : 4, 'title' : 'DMC App', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
-        {'id' : 5, 'title' : 'DMC Site', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
-        {'id' : 6, 'title' : 'dadok dadok', 'outline' : '음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트'},
+        {'id' : 2, 'title' : 'plant app', 'outline' : '식물을 촬영해서 어떤 식물인지 알아내는 어플'},
+        {'id' : 3, 'title' : 'chatting', 'outline' : 'redis 사용법과 소켓 통신을 경험하고 싶어 만든 채팅'},
+        {'id' : 4, 'title' : 'DMC App', 'outline' : '동양미래대학교를 졸업한 선배로서 학교생활에 대한 정보를 제공하는 팀프로젝트 어플'},
+        {'id' : 5, 'title' : 'DMC Site', 'outline' : 'DMC App을 만든 팀으로 우리 팀을 소개하기 위해 개발된 팀프로젝트 사이트'},
+        {'id' : 6, 'title' : 'dadok dadok', 'outline' : '독서 완독을 장려하는 팀프로젝트 사이트'},
     ]
 }
 
