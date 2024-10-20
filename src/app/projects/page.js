@@ -12,23 +12,32 @@ const data = () => {
     ]
 }
 
-function modalpopup() {
-    return <>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                    <h1>프로젝트 : <a href="https://wogur2689.github.io/MusicWeb/">Music Web</a></h1>
-                    <span>프로젝트 제목을 클릭시 사이트로 이동합니다.</span>
-                    <p>
-                        <h3>[개요]<br/>음악을 들을수 있는 사이트로 React를 확실히 공부하면서 프로젝트도 해보고 싶어서 만들어본 사이트</h3>
-                        <h3>[기술]<br/>React, Pigma</h3>
-                        <h3>[기간]<br/>2022.01 ~ 2022.06 6개월</h3>
-                    </p>
-                <br />
+export const ModalPopup = (props) => {
+    const projectData = data().find(project => project.id === props.id);
+
+    if (!projectData) {
+        return null; // 해당 id에 맞는 프로젝트가 없을 경우 모달을 표시하지 않음
+    }
+
+    return (
+        <div id="myModal" className="modal">
+            <div className="modal-content">
+                <span className="close" onClick={() => closeModal()}>&times;</span>
+                <h1>프로젝트: 
+                    <a href={`https://wogur2689.github.io/${projectData.title.replace(/\s+/g, '')}/`}>
+                        {projectData.title}
+                    </a>
+                </h1>
+                <span>프로젝트 제목을 클릭 시 사이트로 이동합니다.</span>
+                <p>
+                    <h3>[개요]<br/>{projectData.outline}</h3>
+                    <h3>[기술]<br/>React, Figma</h3>
+                    <h3>[기간]<br/>2022.01 ~ 2022.06 (6개월)</h3>
+                </p>
             </div>
         </div>
-    </>
-}
+    );
+};
 
 export default function Projects() {
     return (
@@ -38,7 +47,7 @@ export default function Projects() {
                 <div className={styles.project_list}>
                     <div className={styles.project}>
                         <img src="./img/project/MusicWeb.png" alt="음악사이트"/>
-                        <span><a href="">Music Web</a></span>
+                        <span><a href="#"><button type="button" onclick="modalpopup(1)">Music Web</button></a></span>
                     </div>
                     <div className={styles.project}>
                         <img src="./img/project/Plant.png" alt="식물사전앱"/>
