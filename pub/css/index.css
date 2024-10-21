@@ -172,7 +172,7 @@ header #menu a:hover {
 }
 
 .modal {
-    display: none; /* 기본적으로 모달을 숨김 */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;

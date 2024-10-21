@@ -1,6 +1,25 @@
 import styles from './projects.module.css';
+import React, {useState} from 'react';
 
 //project data 추후 백엔드로 변경
+const srcArr = [
+    './img/project/MusicWeb.png', 
+    './img/project/Plant.png',
+    './img/project/Chatting.png',
+    './img/project/DMCSite.png',
+    './img/project/DMCAPP.png',
+    './img/project/dadok.png'
+];
+
+const altArr = [
+    '음악사이트',
+    '식물사전앱',
+    '채팅',
+    'DMCSite',
+    'DMCAPP',
+    'DadokDadok'
+];
+
 const data = () => {
     return [ 
         {
@@ -54,63 +73,76 @@ const data = () => {
     ]
 }
 
-export const ModalPopup = (props) => {
-    const projectData = data().find(project => project.id === props.id);
+//init
+const initProjects = (open) => {
+    const result = [];
+    for (let index = 0; index < srcArr.length; index++) {
+        result.push(
+            <div key={index} className={styles.project}>
+                <img src={srcArr[index]} alt={altArr[index]}/>
+                <span><a onClick={(e) => {e.preventDefault(); open(index + 1)}}>{data()[index].title}</a></span>
+            </div>
+        );
+    }
+    return (
+        <>{result}</>
+    );
+}
+
+//popup
+const Alert = ({id, open, close}) => {
+    const projectData = data().find(project => project.id == id);
 
     if (!projectData) {
         return null; // 해당 id에 맞는 프로젝트가 없을 경우 모달을 표시하지 않음
     }
 
     return (
-        <div id="myModal" className="modal">
-            <div className="modal-content">
-                <span className="close" onClick={() => closeModal()}>&times;</span>
-                <h1>프로젝트: 
-                    <a href={`${projectData.url}`}>
-                        {projectData.title}
-                    </a>
-                </h1>
-                <span>프로젝트 제목을 클릭 시 사이트로 이동합니다.</span>
-                <p>
-                    <h3>[개요]<br/>{projectData.outline}</h3>
-                    <h3>[기술]<br/>{projectData.skill}</h3>
-                    <h3>[기간]<br/>{projectData.period}</h3>
-                </p>
-            </div>
-        </div>
+        // 모달이 열릴때 openModal 클래스가 생성된다.
+        <>
+            {open ? (
+                <div id="myModal" className={styles.modal}>
+                    <div className={styles.modalContent}>
+                    <span className={styles.close} onClick={close}>&times;</span>
+                    <h1>프로젝트: 
+                        <a href={`${projectData.url}`}>
+                            {projectData.title}
+                        </a>
+                    </h1>
+                    <span>프로젝트 제목을 클릭 시 사이트로 이동합니다.</span>
+                    <div>
+                        <h3>[개요]<br/>{projectData.outline}</h3>
+                        <h3>[기술]<br/>{projectData.skill}</h3>
+                        <h3>[기간]<br/>{projectData.period}</h3>
+                    </div>
+                    </div>
+                </div>
+            ) : null}
+        </>
     );
 };
 
 export default function Projects() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedProjectId, setSelectedProjectId] = useState(null);
+
+    const openModal = (id) => {
+        setSelectedProjectId(id);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
     return (
         <>
             <h1 className={styles.ht}>Projects</h1>
             <section className={styles.projects}>
                 <div className={styles.project_list}>
-                    <div className={styles.project}>
-                        <img src="./img/project/MusicWeb.png" alt="음악사이트"/>
-                        <span><a href="#"><button type="button" onclick="modalpopup(1)">Music Web</button></a></span>
-                    </div>
-                    <div className={styles.project}>
-                        <img src="./img/project/Plant.png" alt="식물사전앱"/>
-                        <span><a href="#"><button type="button" onclick="modalpopup(2)">Plant App</button></a></span>
-                    </div>
-                    <div className={styles.project}>
-                        <img src="./img/project/Chatting.png" alt="채팅"/>
-                        <span><a href="#"><button type="button" onclick="modalpopup(3)">Mini Chatting</button></a></span>
-                    </div>
-                    <div className={styles.project}>
-                        <img src="./img/project/DMCSite.png" alt="DMCSite"/>
-                        <span><a href="#"><button type="button" onclick="modalpopup(4)">DMC Site</button></a></span>
-                    </div>
-                    <div className={styles.project}>
-                        <img src="./img/project/DMCAPP.png" alt="DMCAPP"/>
-                        <span><a href="#"><button type="button" onclick="modalpopup(5)">DMC APP</button></a></span>
-                    </div>
-                    <div className={styles.project}>
-                        <img src="./img/project/dadok.png" alt="DadokDadok"/>
-                        <span><a href="#"><button type="button" onclick="modalpopup(6)">Dadok Dadok</button></a></span>
-                    </div>
+                    {initProjects(openModal)}
+                    {isModalOpen && (
+                        <Alert id={selectedProjectId} open={isModalOpen} close={closeModal} />
+                    )}
                 </div>
             </section>
         </>
