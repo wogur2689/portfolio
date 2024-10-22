@@ -1,3 +1,4 @@
+"use client"
 import styles from './projects.module.css';
 import React, {useState} from 'react';
 
