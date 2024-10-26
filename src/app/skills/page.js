@@ -38,7 +38,7 @@ export default function Skills() {
                     <img src="./img/JQuery.png" alt="jquery" />
                 </div>
                 <div className={styles.skill}>
-                    <img src="./img/bootstrap.png" alt="bootstrap" />
+                    <img src="./img/BootStrap.png" alt="bootstrap" />
                 </div>
             </div>
             <div className={styles.skillset}>
