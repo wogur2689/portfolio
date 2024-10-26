@@ -34,6 +34,12 @@ export default function Skills() {
                 <div className={styles.skill}>
                     <img src="./img/FrontEnd.png" alt="react" />
                 </div>
+                <div className={styles.skill}>
+                    <img src="./img/JQuery.png" alt="jquery" />
+                </div>
+                <div className={styles.skill}>
+                    <img src="./img/bootstrap.png" alt="bootstrap" />
+                </div>
             </div>
             <div className={styles.skillset}>
                 <div className={styles.skill}>

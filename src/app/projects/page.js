@@ -5,24 +5,19 @@ import React, {useState} from 'react';
 //project data 추후 백엔드로 변경
 const srcArr = [
     './img/project/MusicWeb.png', 
-    './img/project/Plant.png',
     './img/project/Chatting.png',
     './img/project/DMCSite.png',
-    './img/project/DMCAPP.png',
-    './img/project/dadok.png'
+    './img/project/DMCAPP.png'
 ];
 
 const altArr = [
     '음악사이트',
-    '식물사전앱',
     '채팅',
     'DMCSite',
-    'DMCAPP',
-    'DadokDadok'
+    'DMCAPP'
 ];
 
-const data = () => {
-    return [ 
+const data = [ 
         {
             'id' : 1,
             'title' : 'Music Web',
@@ -32,15 +27,7 @@ const data = () => {
             'url': 'https://wogur2689.github.io/MusicWeb'
         },
         {
-            'id' : 2, 
-            'title' : 'plant app',
-            'outline' : '식물을 촬영해서 어떤 식물인지 알아내는 어플',
-            'skill' : 'Android, kotlin, Figma',
-            'period': '2022.08 ~ 2022.10 (3개월)',
-            'url': 'https://github.com'
-        },
-        {
-            'id' : 3,
+            'id' : 2,
             'title' : 'chatting',
             'outline' : 'redis 사용법과 소켓 통신을 경험하고 싶어 만든 채팅',
             'skill' : 'Spring boot, ws-stomp, JQuery, sockjs, thymeleaf, websocket, redis',
@@ -48,31 +35,22 @@ const data = () => {
             'url': 'https://github.com'
         },
         {
-            'id' : 4,
+            'id' : 3,
             'title' : 'DMC Site',
             'outline' : 'DMC App을 만든 팀으로 우리 팀을 소개하기 위해 개발된 팀프로젝트 사이트',
             'skill' : 'Spring boot, mysql, React, Pigma, github pages',
             'period': '2022.10 ~ 2022.12 (3개월)',
-            'url': 'https://github.com'
+            'url': 'https://kangminna.github.io/MonthlyCoding_Web/'
         },
         {
-            'id' : 5,
+            'id' : 4,
             'title' : 'DMC App',
             'outline' : '동양미래대학교를 졸업한 선배로서 학교생활에 대한 정보를 제공하는 팀프로젝트 어플',
             'skill' : 'Spring boot, firebase, React, Pigma, android, kotlin',
             'period': '2023.01 ~ 2023.10 (9개월)',
-            'url': 'https://github.com'
-        },
-        {
-            'id' : 6,
-            'title' : 'dadok dadok',
-            'outline' : '독서 완독을 장려하는 팀프로젝트 사이트',
-            'skill' : 'Spring boot, mysql, swagger, JUnit, Pigma',
-            'period': '2024.02 ~ 2024.08 (7개월)',
-            'url': 'https://github.com'
-        },
-    ]
-}
+            'url': 'https://play.google.com/store/apps/details?id=com.monthlycoding.dmc2'
+        }
+    ];
 
 //init
 const initProjects = (open) => {
@@ -81,7 +59,7 @@ const initProjects = (open) => {
         result.push(
             <div key={index} className={styles.project}>
                 <img src={srcArr[index]} alt={altArr[index]}/>
-                <span><a onClick={(e) => {e.preventDefault(); open(index + 1)}}>{data()[index].title}</a></span>
+                <span><a onClick={(e) => {e.preventDefault(); open(index + 1)}}>{data[index].title}</a></span>
             </div>
         );
     }
@@ -92,7 +70,7 @@ const initProjects = (open) => {
 
 //popup
 const Alert = ({id, open, close}) => {
-    const projectData = data().find(project => project.id == id);
+    const projectData = data.find(project => project.id == id);
 
     if (!projectData) {
         return null; // 해당 id에 맞는 프로젝트가 없을 경우 모달을 표시하지 않음
