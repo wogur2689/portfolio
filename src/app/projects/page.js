@@ -36,7 +36,7 @@ const data = [
             'period': '2023.09 ~ 2023.10 (2개월)',
             'cont1': 'WebSocket을 사용한 실시간 메시징 기능 구현',
             'cont2': 'Redis를 사용한 메시지 저장 및 관리',
-            'url': 'https://github.com'
+            'url': 'https://github.com/wogur2689/chatting'
         },
         {
             'id' : 3,
@@ -56,7 +56,7 @@ const data = [
             'period': '2022.10 ~ 2022.12 (3개월)',
             'cont1': '단순하면서도 반응형이 쉽도록 디자인',
             'cont2': '메일 문의 기능을 구현하여 사용자의 지원을 받도록 노력.',
-            'url': 'https://kangminna.github.io/MonthlyCoding_Web/'
+            'url': 'https://kangminna.github.io/MonthlyCoding_Web/' 
         },
         {
             'id' : 5,
