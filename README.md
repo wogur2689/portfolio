@@ -28,4 +28,5 @@ npx json-server@0.17.4 --port 9999 --watch db.json
 - 2차 : club추가, Career flex -> grid로 전환 (2024-09-20 까지 디자인 및 개발 완료)
 - 3차 : 
     - project 상세 기술 팝업 추가 (2024-10-20 완료)
-    - Skills : JQuery (2024-10-23 까지)
+    - Skills : JQuery (2024-10-23 까지 완료)
+- 4차 : Skills - jenkins, docker 추가 (2024-11-23 추가 완료)

@@ -6,6 +6,7 @@ import React, {useState} from 'react';
 const srcArr = [
     './img/project/MusicWeb.png', 
     './img/project/Chatting.png',
+    './img/project/Portfolio.png',
     './img/project/DMCSite.png',
     './img/project/DMCAPP.png'
 ];
@@ -13,6 +14,7 @@ const srcArr = [
 const altArr = [
     '음악사이트',
     '채팅',
+    'portfolio',
     'DMCSite',
     'DMCAPP'
 ];

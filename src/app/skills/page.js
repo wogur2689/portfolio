@@ -45,6 +45,12 @@ export default function Skills() {
                 <div className={styles.skill}>
                     <img src="./img/AWS.png" alt="aws" />
                 </div>
+                <div className={styles.skill}>
+                    <img src="./img/Jenkins.png" alt="jenkins" />
+                </div>
+                <div className={styles.skill}>
+                    <img src="./img/Docker.png" alt="docker" />
+                </div>
             </div>
             <div className={styles.skillset}>
                 <div className={styles.skill}>
