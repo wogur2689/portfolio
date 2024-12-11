@@ -30,8 +30,8 @@ export default function Career() {
                     <h2>Certificate</h2>
                     <img src="./img/Qnet.png" alt="큐넷"/>
                     <p>
-                        정보처리산업기사<br/>
-                        2023.09
+                        정보처리기사<br/>
+                        2024.12
                     </p>
                 </div>
                 <div className={styles.company}>
