@@ -39,7 +39,7 @@ export default function Career() {
                     <img src="./img/company1.png" alt="크림솔루션"/>
                     <p>
                         (주)크림솔루션<br/>
-                        2021.12 ~ 재직<br/>
+                        2021.12 ~ 2025.02<br/>
                         개발본부 웹개발자 대리
                     </p>
                 </div>
