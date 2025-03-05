@@ -40,6 +40,9 @@ export default function Skills() {
                 <div className={styles.skill}>
                     <img src="./img/BootStrap.png" alt="bootstrap" />
                 </div>
+                <div className={styles.skill}>
+                    <img src="./img/Vue.png" alt="Vue" />
+                </div>
             </div>
             <div className={styles.skillset}>
                 <div className={styles.skill}>
