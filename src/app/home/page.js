@@ -9,15 +9,14 @@ export default function Home() {
                 <div className={styles.profile}>
                 <p>Back-end Devloper</p>
                 <h1>길재혁</h1>
-                <h2>안녕하세요. 3년차 백엔드 개발자 길재혁입니다.</h2>
+                <h2>안녕하세요. SI 환경에서 Spring 기반 웹/API 개발을 주로 해온 4년차 백엔드 개발자입니다.</h2>
                 <div className={styles.contact}>
                 <div className={styles.aboutMe}> 
                     <span>About me</span>
                     <p>
-                        생년월일 : 99.11.25<br/>
                         이메일 : wogur2689@naver.com<br/>
                         최종학력 : 학점은행제 학사<br/>
-                        경력 : SI 3년<br/>
+                        경력 : SI 4년<br/>
                     </p>
                 </div>
                 <div className={styles.channel}>

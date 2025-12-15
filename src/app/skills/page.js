@@ -31,15 +31,15 @@ export default function Skills() {
                 </div>
             </div>
             <div className={styles.skillset}>
-                <div className={styles.skill}>
+                {/* <div className={styles.skill}>
                     <img src="./img/FrontEnd.png" alt="react" />
-                </div>
-                <div className={styles.skill}>
+                </div> */}
+                {/* <div className={styles.skill}>
                     <img src="./img/JQuery.png" alt="jquery" />
-                </div>
-                <div className={styles.skill}>
+                </div> */}
+                {/* <div className={styles.skill}>
                     <img src="./img/BootStrap.png" alt="bootstrap" />
-                </div>
+                </div> */}
                 <div className={styles.skill}>
                     <img src="./img/Vue.png" alt="Vue" />
                 </div>
