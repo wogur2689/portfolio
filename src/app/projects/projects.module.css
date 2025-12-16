@@ -1,63 +1,121 @@
 .projects {
     width: 100%;
-    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top: #7d12e7 0.1px solid;
     border-bottom: #7d12e7 0.1px solid;
+    padding: 40px 0;
 }
-.projects .project_list {
+
+.projects .projectList {
     width: 90%;
-    height: 600px;
+    max-width: 1200px;
     display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    overflow: auto;
-    overflow-x: scroll; /* 가로 스크롤 활성화 */
-}
-/* 스크롤바 전체 */
-.projects .project_list::-webkit-scrollbar {
-    width: 500px;
-    height: 10px; /* 스크롤바 높이 (가로 스크롤바일 때) */
+    flex-direction: column;
+    gap: 32px;
+    padding: 20px 0;
 }
 
-/* 스크롤바 트랙 */
-.projects .project_list::-webkit-scrollbar-track {
-    background: #f1f1f1;
+.projects .projectCard {
+    display: flex;
+    flex-direction: row;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 24px;
+    gap: 32px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* 스크롤바 핸들 */
-.projects .project_list::-webkit-scrollbar-thumb {
-    background-color: #0e0322; /* 스크롤바 색상 */
-    border: 2px solid #0e0322; /* 테두리 색상 */
+.projects .projectCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(125, 18, 231, 0.3);
+    border-color: #7d12e7;
 }
 
-/* 스크롤바 핸들 (hover 시) */
-.projects .project_list::-webkit-scrollbar-thumb:hover {
+.projects .projectImage {
+    flex-shrink: 0;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.projects .projectImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects .projectInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #fff;
+}
+
+.projects .projectTitle {
+    margin: 0;
+    font-size: 24px;
+}
+
+.projects .projectTitle a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.projects .projectTitle a:hover {
+    color: #7d12e7;
+}
+
+.projects .projectOutline {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.projects .projectDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.projects .detailItem {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.projects .detailLabel {
+    color: #999;
+    font-weight: 600;
+    min-width: 60px;
+}
+
+.projects .detailValue {
+    color: #fff;
+}
+
+.projects .moreButton {
+    margin-top: 16px;
+    padding: 10px 24px;
     background-color: #7d12e7;
-    border: 2px solid #7d12e7;
-}
-.projects .project_list .project {
-    width: 400px;
-    height: 450px;
     color: #fff;
-    margin-left: 50px;
-    margin-right: 50px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    align-self: flex-start;
 }
-.projects .project_list .project img {
-    width: 400px;
-    height: 400px;
-}
-.projects .project_list .project span a {
-    color: #fff;
-    text-align: center;
-    display: block;
-}
-.projects .project_list .project span a:hover,
-.projects .project_list .project span a:focus {
-    color: rgb(43, 10, 231);
+
+.projects .moreButton:hover {
+    background-color: #9d32f7;
 }
 .section {
     width: 100%;

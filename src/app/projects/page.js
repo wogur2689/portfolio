@@ -76,10 +76,36 @@ const data = [
 const initProjects = (open) => {
     const result = [];
     for (let index = 0; index < srcArr.length; index++) {
+        const projectData = data[index];
         result.push(
-            <div key={index} className={styles.project}>
-                <img src={srcArr[index]} alt={altArr[index]}/>
-                <span><a onClick={(e) => {e.preventDefault(); open(index + 1)}}>{data[index].title}</a></span>
+            <div key={index} className={styles.projectCard}>
+                <div className={styles.projectImage}>
+                    <img src={srcArr[index]} alt={altArr[index]}/>
+                </div>
+                <div className={styles.projectInfo}>
+                    <h2 className={styles.projectTitle}>
+                        <a href={projectData.url} target="_blank" rel="noopener noreferrer">
+                            {projectData.title}
+                        </a>
+                    </h2>
+                    <p className={styles.projectOutline}>{projectData.outline}</p>
+                    <div className={styles.projectDetails}>
+                        <div className={styles.detailItem}>
+                            <span className={styles.detailLabel}>기술:</span>
+                            <span className={styles.detailValue}>{projectData.skill}</span>
+                        </div>
+                        <div className={styles.detailItem}>
+                            <span className={styles.detailLabel}>기간:</span>
+                            <span className={styles.detailValue}>{projectData.period}</span>
+                        </div>
+                    </div>
+                    <button 
+                        className={styles.moreButton}
+                        onClick={(e) => {e.preventDefault(); open(index + 1)}}
+                    >
+                        더보기
+                    </button>
+                </div>
             </div>
         );
     }
@@ -143,7 +169,7 @@ export default function Projects() {
         <>
             <h1 className={styles.ht}>Projects</h1>
             <section className={styles.projects}>
-                <div className={styles.project_list}>
+                <div className={styles.projectList}>
                     {initProjects(openModal)}
                     {isModalOpen && (
                         <Alert id={selectedProjectId} open={isModalOpen} close={closeModal} />
