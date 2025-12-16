@@ -9,7 +9,7 @@ export default function Skills() {
             <div className={styles.it_item}>DataBase</div>
             <div className={styles.it_item}>FrontEnd</div>
             <div className={styles.it_item}>Deployment</div>
-            <div className={styles.it_item}>Mobile</div>
+            {/* <div className={styles.it_item}>Mobile</div> */}
         </section>
         <section className={styles.SkillsIcons}>
             {/* BackEnd */}
@@ -26,15 +26,9 @@ export default function Skills() {
                 <div className={styles.skill}>
                     <img src="./img/MySQL.png" alt="MySQL" />
                 </div>
-                <div className={styles.skill}>
-                    <img src="./img/PostgreSQL.png" alt="postgreSQL" />
-                </div>
             </div>
             {/* FrontEnd */}
             <div className={styles.skillset}>
-                <div className={styles.skill}>
-                    <img src="./img/FrontEnd.png" alt="react" />
-                </div>
                 <div className={styles.skill}>
                     <img src="./img/JQuery.png" alt="jquery" />
                 </div>
@@ -54,12 +48,11 @@ export default function Skills() {
                     <img src="./img/Docker.png" alt="docker" />
                 </div>
             </div>
-            {/* Mobile */}
-            <div className={styles.skillset}>
+            {/* <div className={styles.skillset}>
                 <div className={styles.skill}>
                     <img src="./img/Mobile.png" alt="android" />
                 </div>
-            </div>
+            </div> */}
         </section>
         <section className={styles.desc}>
             <div className={styles.it_item}>
@@ -81,9 +74,9 @@ export default function Skills() {
                 - Jenkins 파이프라인 구성 및 배포 경험<br></br>
                 - Docker 기반 서비스 배포 환경 구성
             </div>
-            <div className={styles.it_item}>
+            {/* <div className={styles.it_item}>
                 - 서버 사이드 협업 경험
-            </div>
+            </div> */}
         </section>
         </div>
     </>
