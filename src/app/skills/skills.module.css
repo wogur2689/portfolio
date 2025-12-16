@@ -1,27 +1,58 @@
-.Skills {
-    height: 120px;
+.skillsLayout {
     display: flex;
     flex-direction: row;
+    gap: 32px;
+}
+
+.Skills {
+    width: 200px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: #494949;
 }
 .Skills .it_item {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    gap: 8px;
     color:#fff;
 }
-.codingSkill {
-    height: 800px;
+.SkillsIcons {
+    height: 1200px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
-.section {
-    width: 100%;
+.skillset {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
 }
-.a {
-    color:black;
-    text-decoration: none;
+.skillset p {
+    color: #fff;
+    font-size: 12px;
 }
+
+.desc {
+    width: 300px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.desc .it_item {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    gap: 8px;
+    color:#fff;
+}
+
 .ht {
         color: white;
         text-align: center;
