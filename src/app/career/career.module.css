@@ -1,40 +1,196 @@
 .career {
-    height: 1500px;
-    color: #fff;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 500px 500px;
-}
-.career .school {
-    width: 400px;
-}
-.career .certificate {
-    width: 400px;
-}
-.career .company {
-    width: 400px;
-}
-.career .club {
-    width: 400px;
-}
-.career .career_title {
-    
-}
-.career .career_content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 50px;
-}
-.section {
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #fff;
 }
-.a {
-    color:black;
-    text-decoration: none;
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
+
+.timelineItem {
+    display: flex;
+    gap: 24px;
+    position: relative;
+}
+
+.timelineMarker {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.markerDot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7d12e7 0%, #9d32f7 100%);
+    border: 3px solid #1a1a1a;
+    box-shadow: 0 0 0 2px #7d12e7;
+    z-index: 2;
+    position: relative;
+}
+
+.timelineLine {
+    width: 2px;
+    flex: 1;
+    background: linear-gradient(180deg, #7d12e7 0%, rgba(125, 18, 231, 0.3) 100%);
+    margin-top: 8px;
+    min-height: 80px;
+}
+
+.timelineCard {
+    flex: 1;
+    background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+    border: 1px solid #333;
+    border-left: 4px solid #7d12e7;
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.timelineCard:hover {
+    transform: translateX(8px);
+    border-left-color: #9d32f7;
+    box-shadow: 0 8px 24px rgba(125, 18, 231, 0.3);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.cardIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid #333;
+}
+
+.cardIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+}
+
+.iconWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    color: #7d12e7;
+}
+
+.iconWrapper svg {
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
+}
+
+.cardTitleSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cardTitle {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.cardPeriod {
+    font-size: 14px;
+    color: #7d12e7;
+    font-weight: 500;
+}
+
+.cardBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.cardDescription {
+    margin: 0;
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.cardType {
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    background-color: #0f0f0f;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
 .ht {
     color: white;
     text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .career {
+        padding: 20px 16px;
+    }
+    
+    .timelineItem {
+        gap: 16px;
+    }
+    
+    .timelineCard {
+        padding: 20px;
+    }
+    
+    .cardHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .cardIcon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .cardTitle {
+        font-size: 18px;
+    }
+    
+    .cardBody {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
 }
