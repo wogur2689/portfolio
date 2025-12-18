@@ -32,7 +32,7 @@ export default function Home() {
                 </div>
             </div>
             <p className={styles.intro}>
-                서비스는 결국 '운영되는 코드'라고 생각합니다.<br></br>
+                서비스는 결국 운영되는 코드 라고 생각합니다.<br></br>
                 그래서 저는 구현보다 운영 이후를 먼저 고민합니다.<br></br>
                 장애 상황, 성능 저하, 데이터 증가와 같은<br></br>
                 현실적인 문제를 기준으로 서버를 설계해왔습니다.<br></br>
