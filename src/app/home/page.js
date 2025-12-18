@@ -4,9 +4,9 @@ export default function Home() {
     return (
         <section className={styles.home}>
             <div className={styles.homeTop}>
-                <div className={styles.me}>
+                {/* <div className={styles.me}>
                     <img className={styles.img} src="./img/me.png" alt="나" />
-                </div>
+                </div> */}
                 <div className={styles.profile}>
                     <p>Back-end Devloper</p>
                     <h1>길재혁</h1>

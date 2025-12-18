@@ -7,7 +7,7 @@ const timelineData = [
         title: '동양미래대학교',
         period: '2018.02 ~ 2022.02',
         description: '컴퓨터정보공학 졸업',
-        conf1: '자료구조, 데이터베이스, 운영체제 등 전공 이수',
+        conf1: '자료구조, 데이터베이스, JAVA 등 전공 이수',
         conf2: 'Java 기반 웹-서버 개발 기초 역량 학습',
         icon: './img/School2.png'
     },
