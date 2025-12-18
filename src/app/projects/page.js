@@ -19,11 +19,15 @@ const data = [
         {
             'id' : 1,
             'title' : '행복더하기',
-            'outline' : '지자체 복지플랫폼',
+            'outline' : '지자체 복지플랫폼 Back-Office 고도화',
             'skill' : 'Spring boot, JPA, QueryDsl, Vue',
             'period': '2025.02 ~ 2025.12 (10개월)',
-            'cont1': '관리자 페이지 고도화',
-            'cont2': '',
+            'cont1': '지자체 Back-Office 화면 및 기능 개발',
+            'cont2': '쿼리 성능 튜닝',
+            'cont3': 'CSAP(클라우드서비스 보안인증) / ISMS(정보보호관리체계) 취약점 보완',
+            'cont4': 'Mobile APP Push 대량 발송 API 개발',
+            'cont5': '고객사/사용자 이슈 대응 (CS)',
+            'result': '데이터(1만 건) 안정적으로 DB 적재 및 푸시 발송, 쿼리 조회속도 2배 감소'
         },
         {
             'id' : 2,
@@ -31,8 +35,12 @@ const data = [
             'outline' : '노후된 시스템 마이그레이션 및 물리서버에서 클라우드 전환',
             'skill' : 'AWS, Linux, FTP, Jenkins, Docker, Nexus, Tomcat',
             'period': '2023.05 ~ 2024.10 (1년 5개월)',
-            'cont1': 'Build 방식 변경 : Ant → Maven',
-            'cont2': 'Jenkins CI/Cd 구축',
+            'cont1': 'Linux FTP 서버 구축: VSFTPD를 사용하여 안정적인 파일 전송 환경 제공.',
+            'cont2': 'EC2 환경에서 Jenkins와 Shell, Maven을 활용한 CI/CD 파이프라인 구축 및 배포 자동화.',
+            'cont3': 'EKS 환경에서 Accordion CI/CD를 도입하여 Docker, Shell, Maven을 활용한 빌드 및 배포 자동화.',
+            'cont4': '기존 빌드 도구를 Ant에서 Maven으로 전환하여 효율성 향상.',
+            'cont5': 'Apache(Web)와 Tomcat(WAS)으로 분리된 서버 구조를 Apache-Tomcat(WAS) 단일 구조로 통합하여 유지보수성 개선.',
+            'result': '클라우드 환경 전환으로 시스템의 확장성과 안정성을 대폭 향상 및 서버 비용 약 30% 절감.'
         },
         {
             'id' : 3,
@@ -131,9 +139,9 @@ const Alert = ({id, open, close}) => {
                                     {projectData.cont5 ? ( <li> {projectData.cont5}  </li>) : ''}
                                 </ul>
                             </h3>
-                            {!projectData.url ? <h3>
+                            {projectData.result ? <h3>
                                 <span className={styles.sectionTitle}>성과</span>
-                                <br/>{projectData.period}
+                                <br/>{projectData.result}
                             </h3> : ''}
                         </div>
                     </div>
