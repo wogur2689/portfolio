@@ -131,10 +131,10 @@ const Alert = ({id, open, close}) => {
                                     {projectData.cont5 ? ( <li> {projectData.cont5}  </li>) : ''}
                                 </ul>
                             </h3>
-                            <h3>
+                            {!projectData.url ? <h3>
                                 <span className={styles.sectionTitle}>성과</span>
                                 <br/>{projectData.period}
-                            </h3>
+                            </h3> : ''}
                         </div>
                     </div>
                 </div>
