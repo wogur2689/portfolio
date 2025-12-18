@@ -7,6 +7,8 @@ const timelineData = [
         title: '동양미래대학교',
         period: '2018.02 ~ 2022.02',
         description: '컴퓨터정보공학 졸업',
+        conf1: '자료구조, 데이터베이스, 운영체제 등 전공 이수',
+        conf2: 'Java 기반 웹-서버 개발 기초 역량 학습',
         icon: './img/School2.png'
     },
     {
@@ -15,6 +17,8 @@ const timelineData = [
         title: 'MonthlyCoding',
         period: '2021.09 ~ 2023.10',
         description: '코딩 동아리 웹스터디',
+        conf1: '웹/백엔드 중심 기술 스터디 진행',
+        conf2: '팀 단위 미니 프로젝트 경험',
         icon: './img/project/DMCSite.png'
     },
     {
@@ -23,6 +27,8 @@ const timelineData = [
         title: 'SI',
         period: '2021.12 ~ 2025.02',
         description: '개발본부 웹개발자 대리',
+        conf1: 'Spring Boot 기반 웹 API 개발',
+        conf2: '클라우드 전환 및 시스템 마이그레이션',
         icon: './img/company1.png'
     },
     {
@@ -31,6 +37,8 @@ const timelineData = [
         title: '학점은행제(편입)',
         period: '2023.08 ~ 2024.08',
         description: '컴퓨터공학 학사졸업',
+        conf1: '실무 병행하며 학사 학위 취득',
+        conf2: '전공 이론 보완 및 컴퓨터공학 전반 학습',
         icon: './img/School1.png'
     },
     {
@@ -46,7 +54,9 @@ const timelineData = [
         type: 'company',
         title: 'SI',
         period: '2025.02 ~ 2025.12',
-        description: '서비스 컨텐츠 사업부 대리',
+        description: '서비스 컨텐츠 사업부 웹개발자 대리',
+        conf1: '운영중인 서비스 Back-Office 고도화 담당',
+        conf2: '성능 튜닝, 보안 인증 대응, CS 대응',
         icon: './img/Qnet.png'
     }
 ];
@@ -80,7 +90,7 @@ export default function Career() {
                                                     <path d="M9 18V18.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                                                 </svg>
                                             </div>
-                                        ) : item.type === 'education' || 'club' ? (
+                                        ) : item.type === 'education' || item.type === 'club' ? (
                                             <div className={styles.iconWrapper}>
                                                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4 19.5C4 18.12 5.12 17 6.5 17H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -108,7 +118,15 @@ export default function Career() {
                                     </div>
                                 </div>
                                 <div className={styles.cardBody}>
-                                    <p className={styles.cardDescription}>{item.description}</p>
+                                    <div className={styles.cardContent}>
+                                        <p className={styles.cardDescription}>{item.description}</p>
+                                        {(item.conf1 || item.conf2) && (
+                                            <ul className={styles.cardConfs}>
+                                                {item.conf1 && <li className={styles.cardConfItem}>{item.conf1}</li>}
+                                                {item.conf2 && <li className={styles.cardConfItem}>{item.conf2}</li>}
+                                            </ul>
+                                        )}
+                                    </div>
                                     <span className={styles.cardType}>{item.type}</span>
                                 </div>
                             </div>
