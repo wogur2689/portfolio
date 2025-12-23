@@ -27,7 +27,7 @@ const data = [
             'cont3': 'CSAP·ISMS 인증 기준에 따른 보안 요구사항 대응',
             'cont4': 'Mobile APP Push 대량 발송 API 개발',
             'cont5': '고객사/사용자 이슈 대응 (CS)',
-            'result': '대량 데이터 안정적으로 DB 적재 및 푸시 발송, 쿼리 조회속도 2배 감소'
+            'result': '대량 데이터 안정적으로 DB 적재 및 푸시 발송, 쿼리 성능 개선'
         },
         {
             'id' : 2,
