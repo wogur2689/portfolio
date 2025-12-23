@@ -164,7 +164,7 @@ export default function Projects() {
     };
     return (
         <>
-            <h1 className={styles.ht}>Projects</h1>
+            <h1 className={styles.ht}>Key Projects</h1>
             <section className={styles.projects}>
                 <div className={styles.projectList}>
                     {initProjects(openModal)}
