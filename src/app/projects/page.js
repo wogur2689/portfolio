@@ -24,22 +24,21 @@ const data = [
             'period': '2025.02 ~ 2025.12 (10개월)',
             'cont1': '지자체 Back-Office 화면 및 기능 개발',
             'cont2': '쿼리 성능 튜닝',
-            'cont3': 'CSAP(클라우드서비스 보안인증) / ISMS(정보보호관리체계) 취약점 보완',
+            'cont3': 'CSAP·ISMS 인증 기준에 따른 보안 요구사항 대응',
             'cont4': 'Mobile APP Push 대량 발송 API 개발',
             'cont5': '고객사/사용자 이슈 대응 (CS)',
-            'result': '데이터(1만 건) 안정적으로 DB 적재 및 푸시 발송, 쿼리 조회속도 2배 감소'
+            'result': '대량 데이터 안정적으로 DB 적재 및 푸시 발송, 쿼리 조회속도 2배 감소'
         },
         {
             'id' : 2,
-            'title' : '현대오일뱅크 AWS 클라우드 이관',
+            'title' : '대기업 에너지 기업 클라우드 전환 프로젝트',
             'outline' : '노후된 시스템 마이그레이션 및 물리서버에서 클라우드 전환',
             'skill' : 'AWS, Linux, FTP, Jenkins, Docker, Nexus, Tomcat',
             'period': '2023.05 ~ 2024.10 (1년 5개월)',
-            'cont1': 'Linux FTP 서버 구축: VSFTPD를 사용하여 안정적인 파일 전송 환경 제공.',
-            'cont2': 'EC2 환경에서 Jenkins와 Shell, Maven을 활용한 CI/CD 파이프라인 구축 및 배포 자동화.',
-            'cont3': 'EKS 환경에서 Accordion CI/CD를 도입하여 Docker, Shell, Maven을 활용한 빌드 및 배포 자동화.',
-            'cont4': '기존 빌드 도구를 Ant에서 Maven으로 전환하여 효율성 향상.',
-            'cont5': 'Apache(Web)와 Tomcat(WAS)으로 분리된 서버 구조를 Apache-Tomcat(WAS) 단일 구조로 통합하여 유지보수성 개선.',
+            'cont1': '파일 전송 인프라 구축',
+            'cont2': '클라우드 환경 CI/CD 파이프라인 구축',
+            'cont3': '컨테이너 기반 서비스 운영 환경 개선',
+            'cont4': '빌드 및 배포 프로세스 개선을 통한 유지보수성 향상',
             'result': '클라우드 환경 전환으로 시스템의 확장성과 안정성을 대폭 향상 및 서버 비용 약 30% 절감.'
         },
         {
