@@ -4,8 +4,8 @@ import React, {useState} from 'react';
 
 //project data 추후 백엔드로 변경
 const srcArr = [
-    './img/project/HappySum.png',
-    './img/project/Hyundai.png',
+    './img/project/Spring.png',
+    './img/project/AWS.png',
     './img/project/Portfolio.png',
 ];
 
@@ -18,8 +18,8 @@ const altArr = [
 const data = [ 
         {
             'id' : 1,
-            'title' : '행복더하기',
-            'outline' : '지자체 복지플랫폼 Back-Office 고도화',
+            'title' : '지자체 복지 플랫폼 고도화 프로젝트',
+            'outline' : '지자체 복지플랫폼 고도화',
             'skill' : 'Spring boot, JPA, QueryDsl, Vue',
             'period': '2025.02 ~ 2025.12 (10개월)',
             'cont1': '지자체 Back-Office 화면 및 기능 개발',
@@ -31,7 +31,7 @@ const data = [
         },
         {
             'id' : 2,
-            'title' : '대기업 에너지 기업 클라우드 전환 프로젝트',
+            'title' : '클라우드 전환 프로젝트',
             'outline' : '노후된 시스템 마이그레이션 및 물리서버에서 클라우드 전환',
             'skill' : 'AWS, Linux, FTP, Jenkins, Docker, Nexus, Tomcat',
             'period': '2023.05 ~ 2024.10 (1년 5개월)',
