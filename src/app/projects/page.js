@@ -10,45 +10,44 @@ const srcArr = [
 ];
 
 const altArr = [
-    'HappySum',
-    'Hyundai',
+    'Spring',
+    'AWS',
     'portfolio',
 ];
 
 const data = [ 
         {
             'id' : 1,
-            'title' : '지자체 복지 플랫폼 고도화 프로젝트',
-            'outline' : '지자체 복지플랫폼 고도화',
-            'skill' : 'Spring boot, JPA, QueryDsl, Vue',
+            'title' : '지자체 통합 복지 플랫폼 고도화',
+            'outline' : '대규모 사용자 데이터 처리를 위한 시스템 고도화 및 국가 보안 인증(CSAP/ISMS) 기준에 부합하는 안정적 서비스 환경 구축.',
+            'skill' : 'Spring boot, JPA, QueryDsl, Vue, Mysql',
             'period': '2025.02 ~ 2025.12 (10개월)',
-            'cont1': '지자체 Back-Office 화면 및 기능 개발',
-            'cont2': '쿼리 성능 튜닝',
-            'cont3': 'CSAP·ISMS 인증 기준에 따른 보안 요구사항 대응',
-            'cont4': 'Mobile APP Push 대량 발송 API 개발',
-            'cont5': '고객사/사용자 이슈 대응 (CS)',
-            'result': '대량 데이터 안정적으로 DB 적재 및 푸시 발송, 쿼리 성능 개선'
+            'cont1': 'JPA/QueryDSL 기반의 생산성 높은 개발을 지향하되, 대규모 데이터 집계 등 복잡도가 높은 로직은 Native Query를 활용하여 인덱스 최적화 및 실행 계획 직접 제어',
+            'cont2': 'CSAP·ISMS 인증 기준에 따른 취약 로그 개선 및 비밀번호 변경주기 수정',
+            'cont3': 'Mobile APP Push 대량 발송 API 개발(2초당 300건 이상의 메시지 안정적 송출)',
+            'cont4': '고객사/사용자 이슈 대응 (CS)',
+            'result': '쿼리 튜닝 전후 속도 차이(30초 -> 3초), CSAP/ISMS 보안 기술 규격 준수 및 인증 획득'
         },
         {
             'id' : 2,
-            'title' : '클라우드 전환 프로젝트',
-            'outline' : '노후된 시스템 마이그레이션 및 물리서버에서 클라우드 전환',
+            'title' : '대규모 온프레미스 시스템의 AWS 클라우드 네이티브 전환',
+            'outline' : '물리 서버 기반의 레거시 환경을 클라우드로 이관하여 운영 효율성 및 확장성 확보.',
             'skill' : 'AWS, Linux, FTP, Jenkins, Docker, Nexus, Tomcat',
             'period': '2023.05 ~ 2024.10 (1년 5개월)',
-            'cont1': '파일 전송 인프라 구축',
-            'cont2': '클라우드 환경 CI/CD 파이프라인 구축',
-            'cont3': '컨테이너 기반 서비스 운영 환경 개선',
+            'cont1': 'Docker 컨테이너 기술을 도입하여 환경 의존성을 제거하고 서버 리소스 사용률 최적화.',
+            'cont2': 'Jenkins 기반의 CI/CD를 구축하여 수동 배포 프로세스를 자동화하고 배포 주기 00% 단축.',
+            'cont3': '망 분리 환경 내의 파일 전송 보안 요구사항을 준수하는 고가용성 전송 인프라 설계',
             'cont4': '빌드 및 배포 프로세스 개선을 통한 유지보수성 향상',
             'result': '클라우드 환경 전환으로 시스템의 확장성과 안정성을 대폭 향상 및 서버 비용 절감.'
         },
         {
             'id' : 3,
             'title' : 'portfolio',
-            'outline' : 'next.js14를 이용하여 나의 대표적인 성과를 소개하는 페이지.',
-            'skill' : 'Next.js, Pigma',
+            'outline' : 'Next.js를 활용하여 개인 경력 및 기술적 성과를 시각화한 브랜드 페이지 구축.',
+            'skill' : 'Next.js, Figma',
             'period': '2024.07 ~ 2024.10 (3개월)',
-            'cont1': 'Next.js를 이용한 트렌디한 사이트로 구현 ',
-            'cont2': 'github 배포 및 확장성을 고려하면서 성과가 눈에 띄도록 개발',
+            'cont1': 'Next.js를 기반의 사용자 경험(UX) 최적화 ',
+            'cont2': 'GitHub Actions를 활용한 자동 배포 환경 구축 및 유지보수성 확보',
             'url': 'https://wogur2689.github.io/portfolio'
         }
     ];
