@@ -30,3 +30,4 @@ npx json-server@0.17.4 --port 9999 --watch db.json
     - project 상세 기술 팝업 추가 (2024-10-20 완료)
     - Skills : JQuery (2024-10-23 까지 완료)
 - 4차 : Skills - jenkins, docker 추가 (2024-11-23 추가 완료)
+- 5차 : 전체 리뉴얼 (2025-12-30 완료)
