@@ -57,7 +57,17 @@ const timelineData = [
         description: '서비스 컨텐츠 사업부 웹개발자 대리',
         conf1: '운영중인 서비스 Back-Office 고도화 담당',
         conf2: '성능 튜닝, 보안 인증 대응, CS 대응',
-        icon: './img/Qnet.png'
+        icon: './img/company1.png'
+    },
+    {
+        id: 7,
+        type: 'company',
+        title: 'SM',
+        period: '2026.04 ~ 현재',
+        description: 'IDS 사업부 웹개발자 사원',
+        conf1: '제조업 웹사이트 개발/운영',
+        conf2: '보안포탈, 6-Sigma, 개발업무관리 운영',
+        icon: './img/company1.png'
     }
 ];
 
